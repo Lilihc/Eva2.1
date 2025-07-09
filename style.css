@@ -1,0 +1,186 @@
+body {
+    background-color: darkgrey;
+    font-family: Arial, sans-serif;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    
+}
+/* Contenedor fijo arriba a la derecha */
+#carrito-container {
+    position: fixed;
+    top: 20px;
+    right: 20px;
+    z-index: 1000;
+    font-family: Arial, sans-serif;
+}
+
+/* Icono del carrito */
+#icono-carrito {
+    position: relative;
+    background: white;
+    padding: 10px 15px;
+    border-radius: 30px;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.2);
+    cursor: pointer;
+    font-size: 24px;
+}
+
+/* Burbuja del contador */
+#contador-carrito {
+    position: absolute;
+    top: -8px;
+    right: -8px;
+    background: red;
+    color: white;
+    font-size: 14px;
+    padding: 2px 6px;
+    border-radius: 50%;
+    font-weight: bold;
+}
+
+/* Lista desplegable del carrito */
+#carrito-lista {
+    margin-top: 10px;
+    background-color: white;
+    padding: 10px;
+    border-radius: 10px;
+    box-shadow: 0px 4px 12px rgba(0,0,0,0.2);
+    max-width: 250px;
+}
+
+/* Ocultar carrito */
+.oculto {
+    display: none;
+}
+/*Mensaje de notificación*/
+#notificacion {
+    position: fixed;
+    top: 80px;
+    right: 20px;
+    background-color: #38a169; /* verde */
+    color: white;
+    padding: 12px 20px;
+    border-radius: 10px;
+    box-shadow: 0px 4px 10px rgba(0,0,0,0.2);
+    font-weight: bold;
+    z-index: 1001;
+    transition: opacity 0.3s ease;
+}
+
+.oculto {
+    display: none;
+}
+
+
+/* titulo 1 */
+h1 {
+    font-family: Impact;
+    font-size: 50px;
+}
+
+h2 {
+    color: brown;
+}
+
+/* Navegacion */
+#cabecera {
+    width: 800px;
+    margin: auto;
+    background-color: rgba(169, 169, 169, 0.567);
+    text-align: center;
+    padding: 10px;
+}
+
+button {
+    background-color: rgb(236, 236, 229);
+    border: none;
+    width: 150px;
+    height: 50px;
+    margin: 10px;
+    border-radius: 15px;
+}
+
+/* Cambio de color del boton*/
+button:hover{
+    background-color: rgb(109, 119, 128);
+}
+
+#menu {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+img {
+    width: 250px;
+    border-radius: 15px;
+    margin: 10px;
+}
+
+.formulario {
+    max-width: 500px;
+    margin: 0 auto;
+    background-color: darkgrey;
+    padding: 20px;
+    border-radius: 12px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+}
+
+fieldset {
+    border: none;
+    padding: 0;
+}
+
+legend {
+    font-weight: bold;
+    margin-bottom: 15px;
+}
+
+.campo {
+    margin-bottom: 15px;
+}
+
+label {
+    display: block;
+    font-weight: bold;
+    margin-bottom: 5px;
+}
+
+.input-text {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    font-size: 14px;
+}
+
+textarea.input-text {
+    resize: vertical;
+    min-height: 100px;
+}
+
+.boton {
+    background-color: #3b82f6;
+    color: white;
+    border: none;
+    padding: 12px;
+    font-size: 16px;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.boton:hover {
+    background-color: #2563eb;
+}
+
+
+#errores {
+    color: red;
+    margin-top: 10px;
+}
+

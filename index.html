@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tienda de Ropa</title>
+    <link rel="stylesheet" href="style.css">
+    <script defer src="script.js"></script>
+</head>
+<body>
+  <div id="carrito-container">
+    <div id="icono-carrito">🛒
+      <span id="contador-carrito">0</span>
+    </div>
+    <div id="carrito-lista" class="oculto">
+      Carrito vacío
+    </div>
+  </div>
+  <div id="notificacion" class="oculto">✅ Producto agregado al carrito</div>
+
+
+    <div id="cabecera">
+         <h1>TIENDA DE ROPA</h1>
+         <h2>Bienvenido a nuestro Portal... Pronto Novedades</h2>
+         <button onclick="sumar()">Sumar 8 + 6</button>
+    </div>
+    <nav>
+        <div id="menu">
+            <button onclick="verPolera('Polera')">POLERA</button>
+            <button onclick="verVestido('vestido')">VESTIDO</button>
+            <button onclick="verBufanda('Bufanda')">BUFANDA</button>
+            <button onclick="verAbrigo('Abrigo')">ABRIGO</button>
+            <button onclick="verFalda('falda')">FALDA</button>
+                
+          </div>
+    </nav>
+
+    <div id="vitrina">
+      <div class="producto">
+        <img src="img/polera1.jpg"/>
+        <button onclick="agregarAlCarrito('Polera moderna', 12990)">Agregar al carrito</button>
+      </div>
+      
+    </div>
+
+    <section id="Contacto"> 
+        <div class="formulario">
+          <h3>Formulario de Contacto</h3>
+          <form id="formulario-contacto">
+            <fieldset>
+              <legend>
+                Recibe nuestras novedades y ofertas especiales llenando todos los
+                campos
+              </legend>
+      
+              <div class="campo">
+                <label>Nombre :</label>
+                <input class="input-text" type="text" id="nombre" placeholder="Ingrese su nombre" required />
+              </div>
+      
+              <div class="campo">
+                <label>Teléfono :</label>
+                <input class="input-text" type="tel" id="telefono" placeholder="Ingrese su teléfono" required />
+              </div>
+      
+              <div class="campo">
+                <label>Correo :</label>
+                <input class="input-text" type="email" id="correo" placeholder="Ingrese su correo" required />
+              </div>
+      
+              <div class="campo">
+                <label>Mensaje :</label>
+                <textarea class="input-text" id="mensaje" placeholder="Ingrese su mensaje" required></textarea>
+              </div>
+      
+              <div>
+                <input class="boton" type="submit" value="Enviar" />
+              </div>
+            </fieldset>
+          </form>
+          <div id="errores" style="color: red; margin-top: 10px;"></div>
+        </div>
+      </section>
+   
+  
+    <div id="errores"></div>
+</body>
+</html>
